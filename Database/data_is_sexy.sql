@@ -40,7 +40,7 @@ CREATE TABLE Employees (
     FOREIGN KEY (OfficeID) REFERENCES Office(OfficeID)
 );
 
--- Store Table 
+-- Stores Table 
 CREATE TABLE Stores (
 	StoreID CHAR(36) NOT NULL,
     OfficeID CHAR(36) NOT NULL,
@@ -78,6 +78,8 @@ CREATE TABLE Payment_Method (
     PRIMARY KEY (MethodID)
 );
 
+
+-- Needs to be completed still
 -- Payment Table 
 CREATE TABLE Payment (
 	PaymentID CHAR(36) NOT NULL,
@@ -100,6 +102,7 @@ CREATE TABLE Shipping_Status (
     PRIMARY KEY (Shipping_Status_ID)
 );
 
+-- Needs to be completed still
 -- Shipping Table 
 CREATE TABLE Shipping (
 	ShippingID CHAR(36) NOT NULL,
@@ -155,6 +158,7 @@ CREATE TABLE Products (
     FOREIGN KEY (CategoryID) REFERENCES Category(CategoryID)
 );
 
+-- Needs to be completed still
 -- OrderProducts Table 
 CREATE TABLE OrderProducts (
 	OrderProductID CHAR(36) NOT NULL,
