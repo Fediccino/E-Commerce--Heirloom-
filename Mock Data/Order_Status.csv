@@ -1,0 +1,5 @@
+"Order_StatusID";"Description"
+"1";"Confirmed"
+"2";"Being Processed"
+"3";"Processed"
+"4";"Order Shipped"
