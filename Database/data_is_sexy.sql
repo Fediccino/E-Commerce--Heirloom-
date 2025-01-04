@@ -146,10 +146,10 @@ CREATE TABLE Category (
 CREATE TABLE Products (
 	ProductID CHAR(36) NOT NULL,
     ManufacturerID CHAR(36) NOT NULL,
-    Gender VARCHAR(5) NULL,
+    Gender VARCHAR(25) NULL,
     Size CHAR(2) NULL,
     Color VARCHAR(100) NULL,
-    Material VARCHAR(100),
+    Type VARCHAR(100),
     CategoryID CHAR(36),
     PRIMARY KEY (ProductID),
     FOREIGN KEY (CategoryID) REFERENCES Category(CategoryID)
