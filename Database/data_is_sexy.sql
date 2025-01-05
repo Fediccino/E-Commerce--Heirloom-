@@ -78,16 +78,15 @@ CREATE TABLE Payment_Method (
     PRIMARY KEY (MethodID)
 );
 
-
--- Needs to be completed still
 -- Payment Table 
 CREATE TABLE Payment (
 	PaymentID CHAR(36) NOT NULL,
     CustomerID CHAR(36) NOT NULL,
-    Amount DECIMAL(8,2) NOT NULL,
+    Amount DECIMAL(10,2) NOT NULL,
     Card_Number CHAR(16) NOT NULL,
+    Card_Type CHAR(36) NOT NULL,
     Payment_Date DATETIME NOT NULL,
-	Payment_Status CHAR(36) NOT NULL,
+	Payment_Status CHAR(1) NOT NULL,
     Payment_Method CHAR(36) NOT NULL,
     PRIMARY KEY (PaymentID),
     FOREIGN KEY (CustomerID) REFERENCES Customers(CustomerID),
@@ -102,16 +101,15 @@ CREATE TABLE Shipping_Status (
     PRIMARY KEY (Shipping_Status_ID)
 );
 
--- Needs to be completed still
--- Shipping Table 
+
+-- Shipping Table
 CREATE TABLE Shipping (
 	ShippingID CHAR(36) NOT NULL,
     OrderID CHAR(36) NOT NULL,
     Shipping_Status CHAR(36) NULL,
-    AddressID CHAR(36) NOT NULL,
+    AddressID CHAR(36) NULL,
     PRIMARY KEY (ShippingID),
     -- FOREIGN KEY (OrderID) REFERENCES Orders(OrderID), THIS COMMAND NEEDS TO COME AFTER WE HAVE CREATED THE ORDERS TABLE THEREFORE WE WILL NEED TO CREATE A COMMAND LATER TO ALTER TABLE ADD FOREIGN KEY
-    -- Created at line 176
     FOREIGN KEY (AddressID) REFERENCES Address(AddressID),
     FOREIGN KEY (Shipping_Status) REFERENCES Shipping_Status(Shipping_Status_ID)
 );
@@ -123,17 +121,16 @@ CREATE TABLE Order_Status (
     PRIMARY KEY (Order_StatusID)
 );
 
+
 -- Orders Table 
 CREATE TABLE Orders (
 	OrderID CHAR(36) NOT NULL,
     CustomerID CHAR(36) NOT NULL,
-    ShippingID CHAR(36) NOT NULL,
     PaymentID CHAR(36) NOT NULL,
     Order_Date DATETIME NOT NULL,
     Order_Status CHAR(36) NOT NULL,
     PRIMARY KEY (OrderID),
     FOREIGN KEY (CustomerID) REFERENCES Customers(CustomerID),
-    FOREIGN KEY (ShippingID) REFERENCES Shipping(ShippingID),
     FOREIGN KEY (PaymentID) REFERENCES Payment(PaymentID),
     FOREIGN KEY (Order_Status) REFERENCES Order_Status(Order_StatusID)
 );
@@ -158,26 +155,16 @@ CREATE TABLE Products (
     FOREIGN KEY (CategoryID) REFERENCES Category(CategoryID)
 );
 
--- Needs to be completed still
--- OrderProducts Table 
-CREATE TABLE OrderProducts (
-	OrderProductID CHAR(36) NOT NULL,
-    ProductID CHAR(36) NOT NULL,
-    Quantity DECIMAL(8,2) NOT NULL,
-    Price DECIMAL(8,2) NOT NULL,
-    -- Discount STRING FUNCTION OR DECIMAL? 
-    PRIMARY KEY (OrderProductID),
-    FOREIGN KEY (ProductID) REFERENCES Products(ProductID)
-);
-
 -- Manufacturer Table 
 CREATE TABLE Manufacturer (
 	ManufacturerID CHAR(36),
-    Description VARCHAR(100),
+    Description VARCHAR(1000),
     AddressID CHAR(36),
+    Name VARCHAR(100),
     PRIMARY KEY (ManufacturerID),
     FOREIGN KEY (AddressID) REFERENCES Address(AddressID)
 );
+
 
 -- Additional foreign key for 
 ALTER TABLE Shipping ADD FOREIGN KEY (OrderID) REFERENCES Orders(OrderID);
