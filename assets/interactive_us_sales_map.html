@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_7a7476ab293ff8824c5c2a985bfc00ba {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_7a7476ab293ff8824c5c2a985bfc00ba" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_7a7476ab293ff8824c5c2a985bfc00ba = L.map(
+                "map_7a7476ab293ff8824c5c2a985bfc00ba",
+                {
+                    center: [37.0902, -95.7129],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 4,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_fa4db9cbca01fde7583008c1c533ee5a = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_fa4db9cbca01fde7583008c1c533ee5a.addTo(map_7a7476ab293ff8824c5c2a985bfc00ba);
+        
+    
+            var circle_marker_20b29d66a44170a4f7f44ca6f66a1299 = L.circleMarker(
+                [38.9072, -77.0369],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_7a7476ab293ff8824c5c2a985bfc00ba);
+        
+    
+        var popup_20898412487ede1118f65cf49ee0b1e9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f68d10f90a1119c784cb1fd833f365e4 = $(`<div id="html_f68d10f90a1119c784cb1fd833f365e4" style="width: 100.0%; height: 100.0%;"><strong>City:</strong> Washington<br><strong>State:</strong> DC<br><strong>Country:</strong> United States<br><strong>Total Sales:</strong> $3626.65</div>`)[0];
+                popup_20898412487ede1118f65cf49ee0b1e9.setContent(html_f68d10f90a1119c784cb1fd833f365e4);
+            
+        
+
+        circle_marker_20b29d66a44170a4f7f44ca6f66a1299.bindPopup(popup_20898412487ede1118f65cf49ee0b1e9)
+        ;
+
+        
+    
+    
+            var circle_marker_0ea37f3398731a2760eff24a4767d056 = L.circleMarker(
+                [40.7128, -74.006],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_7a7476ab293ff8824c5c2a985bfc00ba);
+        
+    
+        var popup_0fc280724683c7c72c5e56921e4cfdc3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_348e167771484d1a8f122e983a1019d3 = $(`<div id="html_348e167771484d1a8f122e983a1019d3" style="width: 100.0%; height: 100.0%;"><strong>City:</strong> New York City<br><strong>State:</strong> NY<br><strong>Country:</strong> United States<br><strong>Total Sales:</strong> $3080.55</div>`)[0];
+                popup_0fc280724683c7c72c5e56921e4cfdc3.setContent(html_348e167771484d1a8f122e983a1019d3);
+            
+        
+
+        circle_marker_0ea37f3398731a2760eff24a4767d056.bindPopup(popup_0fc280724683c7c72c5e56921e4cfdc3)
+        ;
+
+        
+    
+    
+            var circle_marker_c3d7f55d3d9b70852941c5c3525edb67 = L.circleMarker(
+                [29.7604, -95.3698],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_7a7476ab293ff8824c5c2a985bfc00ba);
+        
+    
+        var popup_54a1ffd7632d008aaf74753996e0ef17 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7c1807bcd6fdd2c17908975292350650 = $(`<div id="html_7c1807bcd6fdd2c17908975292350650" style="width: 100.0%; height: 100.0%;"><strong>City:</strong> Houston<br><strong>State:</strong> TX<br><strong>Country:</strong> United States<br><strong>Total Sales:</strong> $2830.42</div>`)[0];
+                popup_54a1ffd7632d008aaf74753996e0ef17.setContent(html_7c1807bcd6fdd2c17908975292350650);
+            
+        
+
+        circle_marker_c3d7f55d3d9b70852941c5c3525edb67.bindPopup(popup_54a1ffd7632d008aaf74753996e0ef17)
+        ;
+
+        
+    
+    
+            var circle_marker_c98e4e55c071dc2e879d4927014ba825 = L.circleMarker(
+                [33.749, -84.388],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_7a7476ab293ff8824c5c2a985bfc00ba);
+        
+    
+        var popup_9b2a9832056802e573cb1944cfbf0382 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_84e6c71cc456bf95408b3241e1d617b3 = $(`<div id="html_84e6c71cc456bf95408b3241e1d617b3" style="width: 100.0%; height: 100.0%;"><strong>City:</strong> Atlanta<br><strong>State:</strong> GA<br><strong>Country:</strong> United States<br><strong>Total Sales:</strong> $2142.35</div>`)[0];
+                popup_9b2a9832056802e573cb1944cfbf0382.setContent(html_84e6c71cc456bf95408b3241e1d617b3);
+            
+        
+
+        circle_marker_c98e4e55c071dc2e879d4927014ba825.bindPopup(popup_9b2a9832056802e573cb1944cfbf0382)
+        ;
+
+        
+    
+    
+            var circle_marker_d90b3f10f37e6674aca44d65a822ab60 = L.circleMarker(
+                [32.7767, -96.797],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_7a7476ab293ff8824c5c2a985bfc00ba);
+        
+    
+        var popup_287e4668c820dfc8f5254fb95bc0de24 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_803f92ccefdf269cf2b9d1072ab1aaf5 = $(`<div id="html_803f92ccefdf269cf2b9d1072ab1aaf5" style="width: 100.0%; height: 100.0%;"><strong>City:</strong> Dallas<br><strong>State:</strong> TX<br><strong>Country:</strong> United States<br><strong>Total Sales:</strong> $2019.47</div>`)[0];
+                popup_287e4668c820dfc8f5254fb95bc0de24.setContent(html_803f92ccefdf269cf2b9d1072ab1aaf5);
+            
+        
+
+        circle_marker_d90b3f10f37e6674aca44d65a822ab60.bindPopup(popup_287e4668c820dfc8f5254fb95bc0de24)
+        ;
+
+        
+    
+    
+            var circle_marker_23fb61fd61dee1679d9b5be5d03769dc = L.circleMarker(
+                [38.2527, -85.7585],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_7a7476ab293ff8824c5c2a985bfc00ba);
+        
+    
+        var popup_29c3480bce82584d4807cebf9d390c44 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4e1a8a2cc9c0877358169838be41ff1e = $(`<div id="html_4e1a8a2cc9c0877358169838be41ff1e" style="width: 100.0%; height: 100.0%;"><strong>City:</strong> Louisville<br><strong>State:</strong> KY<br><strong>Country:</strong> United States<br><strong>Total Sales:</strong> $1840.58</div>`)[0];
+                popup_29c3480bce82584d4807cebf9d390c44.setContent(html_4e1a8a2cc9c0877358169838be41ff1e);
+            
+        
+
+        circle_marker_23fb61fd61dee1679d9b5be5d03769dc.bindPopup(popup_29c3480bce82584d4807cebf9d390c44)
+        ;
+
+        
+    
+    
+            var circle_marker_20a242c618fa306f1449429a1ef58938 = L.circleMarker(
+                [39.1031, -84.512],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_7a7476ab293ff8824c5c2a985bfc00ba);
+        
+    
+        var popup_ef8cf5b4b6ef7f1e5dbab19bc8cd58f9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6880099c6c34bd53b07df3e2992b9ce6 = $(`<div id="html_6880099c6c34bd53b07df3e2992b9ce6" style="width: 100.0%; height: 100.0%;"><strong>City:</strong> Cincinnati<br><strong>State:</strong> OH<br><strong>Country:</strong> United States<br><strong>Total Sales:</strong> $1830.50</div>`)[0];
+                popup_ef8cf5b4b6ef7f1e5dbab19bc8cd58f9.setContent(html_6880099c6c34bd53b07df3e2992b9ce6);
+            
+        
+
+        circle_marker_20a242c618fa306f1449429a1ef58938.bindPopup(popup_ef8cf5b4b6ef7f1e5dbab19bc8cd58f9)
+        ;
+
+        
+    
+    
+            var circle_marker_2ba09fa18416497e93b96b4491150017 = L.circleMarker(
+                [36.1699, -115.1398],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_7a7476ab293ff8824c5c2a985bfc00ba);
+        
+    
+        var popup_6e5c269ee7a0cfd7a5635e4f54c010a1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f2ce4d45b774a5957e017399b623d33c = $(`<div id="html_f2ce4d45b774a5957e017399b623d33c" style="width: 100.0%; height: 100.0%;"><strong>City:</strong> Las Vegas<br><strong>State:</strong> NV<br><strong>Country:</strong> United States<br><strong>Total Sales:</strong> $1674.60</div>`)[0];
+                popup_6e5c269ee7a0cfd7a5635e4f54c010a1.setContent(html_f2ce4d45b774a5957e017399b623d33c);
+            
+        
+
+        circle_marker_2ba09fa18416497e93b96b4491150017.bindPopup(popup_6e5c269ee7a0cfd7a5635e4f54c010a1)
+        ;
+
+        
+    
+    
+            var circle_marker_bef449216cdc90be323e2d287a7c6194 = L.circleMarker(
+                [38.627, -90.1994],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_7a7476ab293ff8824c5c2a985bfc00ba);
+        
+    
+        var popup_3b24f6b27555057c60067bb2f29d27cb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f6a853b10c21b0ece4b72750bd32f904 = $(`<div id="html_f6a853b10c21b0ece4b72750bd32f904" style="width: 100.0%; height: 100.0%;"><strong>City:</strong> Saint Louis<br><strong>State:</strong> MO<br><strong>Country:</strong> United States<br><strong>Total Sales:</strong> $1597.74</div>`)[0];
+                popup_3b24f6b27555057c60067bb2f29d27cb.setContent(html_f6a853b10c21b0ece4b72750bd32f904);
+            
+        
+
+        circle_marker_bef449216cdc90be323e2d287a7c6194.bindPopup(popup_3b24f6b27555057c60067bb2f29d27cb)
+        ;
+
+        
+    
+    
+            var circle_marker_37d7b7c9c88326f9fb73c4da11d82a9c = L.circleMarker(
+                [41.8781, -87.6298],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_7a7476ab293ff8824c5c2a985bfc00ba);
+        
+    
+        var popup_18e0156354a75768a2aba1ea122197cf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_eb79b1985ab2b48b5c13ff27b0f52786 = $(`<div id="html_eb79b1985ab2b48b5c13ff27b0f52786" style="width: 100.0%; height: 100.0%;"><strong>City:</strong> Chicago<br><strong>State:</strong> IL<br><strong>Country:</strong> United States<br><strong>Total Sales:</strong> $1596.55</div>`)[0];
+                popup_18e0156354a75768a2aba1ea122197cf.setContent(html_eb79b1985ab2b48b5c13ff27b0f52786);
+            
+        
+
+        circle_marker_37d7b7c9c88326f9fb73c4da11d82a9c.bindPopup(popup_18e0156354a75768a2aba1ea122197cf)
+        ;
+
+        
+    
+</script>
+</html>

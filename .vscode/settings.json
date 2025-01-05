@@ -13,5 +13,8 @@
             "database": "heirloom",
             "username": "root"
         }
+    ],
+    "cSpell.words": [
+        "Mockaroo"
     ]
 }
