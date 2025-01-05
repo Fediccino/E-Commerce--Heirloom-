@@ -1,6 +1,8 @@
 ## Introduction:
 The goal of this project is to showcase our learning journey in database management, SQL, data analysis, and dashboard building while delivering a tailored solution for a new clothing brand redefining 90s aesthetics, called *Heirloom*. The company, founded in 2024, needs a database to manage customer orders, manufacturing details, shipping statuses, and more, while gaining actionable insights to elevate customer satisfaction through personalization. We've collaborated with their CEO and decision-makers to identify key entities—customers, products, orders, payments, shipping, manufacturers, employees, and offices—that will shape the foundation of a robust relational database. 
 
+Want to fast-forward to the results page? I can't blame you, this is a lot. [Analysis folder](/Analysis/)
+
 ### Background:
 As we dive further into a digital age that intertwines itself with out logistical norms, the e-commerce landscape has never been as competitive as before. Data has become the vital resource. 
 
@@ -13,6 +15,7 @@ With no existing infrastructure, my goal was to design a solution from scratch t
 - **MySQL**: For database creation, management, and query processing.
 - **Visual Studio Code (VS Code)**: As an IDE to write and manage SQL scripts.
 - **LucidChart**: To design the Entity Relationship (ER) Diagram and map database relationships.
+- **Python**: For data visualization.
 - **Notion**: For project management, task tracking, and timekeeping.
 - **Excel**: Data cleaning and preparation.
 - **Mockaroo**: Generating sample data.
@@ -42,9 +45,18 @@ This project follows both the **Data Science** Lifecycle and the **Data Analyst*
 
 7. **Predictive Analysis**: Laid the groundwork for future predictive models, such as forecasting demand and identifying potential bottlenecks in the supply chain.
 
-8. **Data Visualization**: Created dashboards in Power BI and Tableau to present insights in an intuitive and actionable format.
+8. **Data Visualization**: Utilized Python to create and draw graphical data represented in the queries ran.
 
 
 ### What I Learned:
+It's hard to pinpoint where to begin. On a personal level, this experience reinforced the importance of clear communication and adaptability. Over each step of the way along the project, I encountered numerous amounts of errors and issues that needed to be resolved for this project to come to fruition. Learning how to bridge the gap between technical skills and business goals.
+- Designing normalized relational databases.
+- Writing efficient SQL queries for data manipulation and reporting.
+- Using visualization tools to communicate insights effectively.
+- Managing a project from ideation to execution.
 
 ### Conclusions:
+This project has been a rewarding opportunity to apply database and data analysis concepts to a real-world scenario. The result is a comprehensive system that not only meets the immediate operational needs of the clothing brand but also lays the foundation for strategic growth. By following established lifecycles, I’ve ensured that the project is both robust and adaptable. I’m excited about the potential impact this database can have on their success and look forward to applying these skills to future projects.
+
+#### Things That I Would Fix:
+Because this project took a large portion of my time of studying, it didn't turn out quite perfect. And I plan on fixing the mistakes when I have some ample time. Although the ERD was drawn it was not particularly followed. Some of the data needs to be cleaned again, and another relationship needs to be created between the OrderProducts and the Products table. 

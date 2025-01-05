@@ -1,6 +1,6 @@
-DROP DATABASE IF EXISTS data_is_sexy;
-CREATE DATABASE data_is_sexy;
-USE data_is_sexy;
+DROP DATABASE IF EXISTS heirloom;
+CREATE DATABASE heirloom;
+USE heirloom;
 
 
 -- Create Address Table 
@@ -153,6 +153,15 @@ CREATE TABLE Products (
     CategoryID CHAR(36),
     PRIMARY KEY (ProductID),
     FOREIGN KEY (CategoryID) REFERENCES Category(CategoryID)
+);
+
+-- OrderProducts Table
+CREATE TABLE OrderProducts (
+    OrderProductID CHAR(36) NOT NULL,
+    ProductID CHAR(36) NOT NULL,
+    Quantity INT NOT NULL,
+    PRIMARY KEY (OrderProductID),
+    FOREIGN KEY (ProductID) REFERENCES Products(ProductID)
 );
 
 -- Manufacturer Table 
