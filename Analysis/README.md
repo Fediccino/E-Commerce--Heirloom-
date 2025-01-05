@@ -35,7 +35,7 @@ ORDER BY TotalSales DESC;
 *This is mock data and not a accurate representation of business sales*
 
 ### 2. Which locations generate the highest sales volume?
-In this scenario we want to identify cities and states that have the top sales revenue. This will allow us particular insights that the Marketing team would be able to utilize and capitalize, to then develop campaigns that target the states that are average performing. We would also be able to, if data allowed, to view the correlational effectiveness of marketing campaigns in the designated City and State, by measuring **Churn** and **First- and Last- Touch Attributions.**
+In this scenario we want to identify cities and states that have the top sales revenue. This will allow us particular insights that the Marketing team would be able to utilize and capitalize, to then develop campaigns that target the states that are average performing. We would also be able, if data allowed, to view the correlational effectiveness of marketing campaigns in the designated City and State, by measuring **Churn** and **First- and Last- Touch Attributions.**
 ```sql
 SELECT
     a.City,
