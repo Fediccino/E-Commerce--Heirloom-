@@ -19,7 +19,7 @@ ORDER BY Salary DESC;
 | Valentine Thomerson | Finance    | vthomerson6s@dell.com              | 65,890.44  |
 | Valina Thomerson    | Finance    | vthomerson6s@dell.com              | 60,365.28  |
 
-![Figure 1](assets/figure1.png)
+![Figure 1](/assets/figure1.jpg)
 
 2. Calculate the total salary expenditure for each department.
 ```sql
@@ -38,7 +38,7 @@ ORDER BY Total_Salary DESC;
 | IT         | 85,365.28     |
 | Sales      | 35,365.28     |
 
-![Figure 2](assets/figure2.png)
+![Figure 2](/assets/figure2.jpg)
 
 3. List all managers and the number of employees reporting to them.
 ```sql
@@ -68,7 +68,7 @@ ORDER BY Number_of_Employees DESC;
 | f8153238-b1fa-441b-a2c6-e2629f5c39ef    | Kevin Chabau        | HR                  | 3                    | 2024-02-12 22:16:46 |
 | b5ac9d30-a08a-4278-b6db-d48f49c2429d    | Quill Sword         | Marketing           | 1                    | 2024-07-31 09:22:20 |
 
-![Figure 3](assets/figure3.png)
+![Figure 3](/assets/figure3.jpg)
 
 ## Customers and Orders
 
@@ -165,7 +165,7 @@ ORDER BY TotalSales DESC;
 | 2024-02       | 9369.06      |
 | 2025-01       | 1693.26      |
 
-![Figure 7](assets/figure7.png)
+![Figure 7](/assets/figure7.jpg)
 
 ## Payments
 8. Determine the percentage distribution of each payment status.
