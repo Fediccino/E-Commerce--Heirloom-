@@ -21,7 +21,7 @@ With no existing infrastructure, my goal was to design a solution from scratch t
 - **Mockaroo**: Generating sample data.
 
 ## The Analysis:
-This project follows both the **Data Science** Lifecycle and the **Data Analyst** Lifecycle, ensuring a systematic approach from start to finish. Every step is designed to address the brand’s challenges and opportunities effectively. Here’s a detailed breakdown of the process:
+This project follows both the **Data Engineering** Lifecycle and the **Data Analyst** Lifecycle, ensuring a systematic approach from start to finish. Every step is designed to address the brand’s challenges and opportunities effectively. Here’s a detailed breakdown of the process:
 
 1. **Problem Identification**: Understand pain points and identify opportunities for operational improvement and customer satisfaction.
 
