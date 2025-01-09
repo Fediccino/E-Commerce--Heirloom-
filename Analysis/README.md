@@ -149,7 +149,9 @@ ORDER BY Total_Salary DESC;
 | Marketing  | 120,730.56    |
 | IT         | 85,365.28     |
 | Sales      | 35,365.28     |
+
 *This is fictitious data. Not be interpreted as accurate representation of salaries.*
+
 ![Figure 2](/assets/figure2.jpg)
 
 ### 6. Who are the managers of the organization? And how many employees are under their management?
